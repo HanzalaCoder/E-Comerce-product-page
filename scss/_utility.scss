@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+.link-item {
+    font-weight: 800;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.name {
+    text-transform: uppercase;
+    font-size: .8rem;
+    color: $Orange;
+}
+
+.edition {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.info {
+    color: $Dark-grayish-blue;
+}
+
+.new-price {
+    font-weight: 900;
+}
+
+.off {
+   background-color: $Pale-orange;
+   padding: .2em;
+   border-radius: 5px;
+   color: $Orange;
+   font-weight: 700;
+}
+
+.minus {
+    color: $Orange;
+    font-size: 1.5rem;
+}
+.prev-offer {
+    color: $Grayish-blue;
+    text-decoration: line-through;
+    font-size: .8rem;
+  
+    
+}
+.plus {
+    color: $Orange;
+    font-size: 1.5rem;
+}
+
+.number {
+    font-weight: 600;
+}
+

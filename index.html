@@ -9,61 +9,113 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="header">
-      <div class="menu">
-        <img class="menu" src="images/icon-menu.svg" alt="">
-        <img class="close" src="images/icon-close.svg" alt="">
-      </div>
-      <nav class="nav">
-        <img class="logo" src="images/logo.svg" alt="">
-        <ul class="links">
-          <li class="link">
-            <div class="link-item">Collections</div>
-            <div class="link-hover"></div>
-          </li>
-          <li class="link">
-            <div class="link-item">Men</div>
-            <div class="link-hover"></div>
-          </li>
-          <li class="link">
-            <div class="link-item">Women</div>
-            <div class="link-hover"></div>
-          </li>
-          <li class="link">
-            <div class="link-item">About</div>
-            <div class="link-hover"></div>
-          </li>
-          <li class="link">
-            <div class="link-item">Contact</div>
-            <div class="link-hover"></div>
-          </li>
-        </ul>
-      </nav>
-      <section class="cart">
-        <div class="cart-box">
-          <img class="cart-img" src="images/icon-cart.svg" alt="">
-          <div class="number"></div>
-        </div>
-        <div class="cart-popup">
-          <h4>CART</h4>
-          <hr>
-          <section class="show-purchase-container">
-            <div class="item-purchase">
-              <img class="purchase-img" src="images/image-product-1-thumbnail.jpg" alt="">
-              <div>
-                <p> Fall Limited Edition Sneakers <br>    $125.00 x <span class="count-item">3</span> <span class="total-cost"></span>
-                </p>
-                <img class="delete" src="images/icon-delete.svg" alt="">
+  <section class="container">
+        <header class="header">
+          <div class="menu">
+            <img class="open" src="images/icon-menu.svg" alt="">
+          </div>
+          <div class="menu-popup">
+            <img class="close" src="images/icon-close.svg" alt="">
+          </div>
+
+          <nav class="nav">
+            <img class="logo" src="images/logo.svg" alt="">
+            <ul class="links">
+              <li class="link">
+                <div class="link-item">Collections</div>
+                <div class="link-hover"></div>
+              </li>
+              <li class="link">
+                <div class="link-item">Men</div>
+                <div class="link-hover"></div>
+              </li>
+              <li class="link">
+                <div class="link-item">Women</div>
+                <div class="link-hover"></div>
+              </li>
+              <li class="link">
+                <div class="link-item">About</div>
+                <div class="link-hover"></div>
+              </li>
+              <li class="link">
+                <div class="link-item">Contact</div>
+                <div class="link-hover"></div>
+              </li>
+            </ul>
+          </nav>
+          <section class="cart">
+            <div class="cart-box">
+              <img class="cart-img" src="images/icon-cart.svg" alt="">
+              <div class="number-taken"></div>
+            </div>
+            <div class="cart-popup">
+              <h4>CART</h4>
+              <hr>
+              <section class="show-purchase-container">
+                <div class="item-purchase">
+                  <img class="purchase-img" src="images/image-product-1-thumbnail.jpg" alt="">
+                  <div>
+                    <p> Fall Limited Edition Sneakers <br>    $125.00 x <span class="count-item">3</span> <span class="total-cost"></span>
+                    </p>
+                    <img class="delete" src="images/icon-delete.svg" alt="">
+                  </div>
               </div>
-           </div>
+              </section>
+              <div class="checkout">checkout</div>
+            </div>
           </section>
-          <div class="checkout">checkout</div>
-        </div>
-      </section>
-      <div class="profile">
-        <img src="images/image-avatar.png" alt="">
-      </div>
-  </header>
+          <div class="profile">
+            <img src="images/image-avatar.png" alt="">
+          </div>
+      </header>
+       <main class="main">
+        <section class="slide-container">
+          <div class="slide slide-active">
+            <img src="images/image-product-1.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/image-product-2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/image-product-3.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/image-product-4.jpg" alt="">
+          </div>
+          <div class="slide-buttons">
+            <img class="next btn" src="images/icon-next.svg" alt="">
+            <img class="prev btn" src="images/icon-previous.svg" alt="">
+          </div>
+        </section>
+        <section class="section-2">
+          <h4 class="name">Sneaker Company</h4>
+          <h1 class="edition"> Fall Limited Edition Sneakers</h1>
+          <p class="info">
+            These low-profile sneakers are your perfect casual wear companion. Featuring a 
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+          <div class="offer">
+            <div class="price">
+              <h1 class="new-price">$125.00</h1>
+              <span class="off">50%</span>
+            </div>
+            <h4 class="prev-offer">$250.00</h4>
+          </div>
+          <div class="count-item">
+            <div class="plus-minus">
+              <span class="minus">-</span>
+              <span class="number">0</span>
+              <span class="plus">+</span>
+            </div>
+            <div class="submit">
+              <img class="cart-back" src="images/icon-cart.svg" alt="">
+              <h5>Add to cart</h5>
+            </div>
+          </div>
+        </section>
+      </main>
+  </section>
+ 
 
 
   
@@ -75,7 +127,7 @@
 
   Sneaker Company
 
-  Fall Limited Edition Sneakers
+ 
 
   These low-profile sneakers are your perfect casual wear companion. Featuring a 
   durable rubber outer sole, they’ll withstand everything the weather can offer.
