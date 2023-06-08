@@ -21,7 +21,7 @@ closemenu.addEventListener("click",()=> {
 
 })
 
-/* mobile toggle / desktop */
+/* mobile slides / desktop */
 const nextbtn = document.querySelector(".next")
 const prevbtn = document.querySelector(".prev") 
 const slides = document.querySelectorAll(".slide")
@@ -79,4 +79,8 @@ linkItem.forEach((link)=> {
         sister.classList.add("link-hover-active")
     })
 })
+
+
+/* add item to the list */
+
 

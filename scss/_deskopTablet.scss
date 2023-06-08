@@ -31,7 +31,7 @@
 .container {
     max-width: 80vw;
     .header {
-        height: 150px;
+        height: 200px;
         border-bottom: 1px solid gray;
 
         .link {
@@ -58,14 +58,14 @@
    }
   
    .main {
-        margin-top: 3rem;
+        margin-top: 5rem;
         display: flex;
         gap: 6rem;
         justify-content: space-around;
 
 
         .slide-container {
-            width: 30%;
+            width: 35%;
             display: flex;
             gap: 1rem;
             flex-direction: column;
@@ -122,6 +122,7 @@
 
             }
             .count-item {
+                width: 70%;
                 flex-direction: row;
             
                 .plus-minus {
