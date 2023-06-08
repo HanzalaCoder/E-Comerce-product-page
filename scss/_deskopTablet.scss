@@ -1,0 +1,148 @@
+@media (min-width:54em) {
+   /* some rest */
+   .menu {
+        display: none;
+   }
+   .menu-popup {
+    display: none;
+   }
+   .links {
+    display: flex;
+    gap: 3rem;
+   }
+   .nav {
+    display: flex;
+    gap: 5rem;
+   }
+   .link-item {
+    font-weight: 600;
+    color: $Grayish-blue;
+    }
+    .profile {
+        align-self: center;
+        img {
+            width: 70px;
+            border-radius: 50%;
+        }
+        img:hover {
+            border: 2px solid $Orange;
+        }
+    }
+.container {
+    max-width: 80vw;
+    .header {
+        height: 150px;
+        border-bottom: 1px solid gray;
+
+        .link {
+            display: flex;
+            flex-direction: column;
+            .link-item {
+                font-size: 1.5rem;
+            }
+            .link-item:hover,.link-item:focus-within {
+                color: $Dark-grayish-blue;
+               
+            }
+            .link-hover {
+                height: 3px;
+                width: 0%;
+                display: inline-block;
+                background-color: $Orange;
+                transition: width 300ms ease-in;
+            }
+            .link-hover-active {
+                width: 100%;
+            }
+        }
+   }
+  
+   .main {
+        margin-top: 3rem;
+        display: flex;
+        gap: 6rem;
+        justify-content: space-around;
+
+
+        .slide-container {
+            width: 30%;
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+            position: static;
+
+            .slide-buttons {
+                display: none;
+            }
+            .btn {
+              
+            }
+            .nav-slide {
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    border-radius: 10px;
+                    width: 100px;
+                   
+                }
+
+                img:hover,.img:focus-within ,.img:active {
+                    opacity: 30%;
+                    border:  5px solid $Orange;
+                }
+
+            }
+        }
+
+
+        .section-2 {
+            width: 60%;
+          
+            gap: 2rem;
+            .name {
+                font-size: 1.25rem;
+            }
+            .edition {
+                font-size: 2.5rem;
+            }
+            .info {
+                font-size: 1.5rem;
+                max-width: 50ch;
+            }
+
+            .offer {
+                font-size: 1.5rem;
+                flex-direction: column;
+                align-self: flex-start;
+                .prev-offer{
+                    font-size: 1.5rem;
+
+                }
+
+            }
+            .count-item {
+                flex-direction: row;
+            
+                .plus-minus {
+                    font-size: 1.5rem;
+                    width:40%;
+
+                }
+
+                .submit {
+                    font-size: 1.5rem;
+                    width: 60%;
+                    
+                }
+
+            }
+
+        }
+
+   }
+}
+
+}   
+
+  

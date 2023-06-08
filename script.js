@@ -6,6 +6,8 @@ const navList = document.querySelector(".links")
 const nav = document.querySelector(".nav")
 
 
+
+
 openMenu.addEventListener("click",()=> {
     popMenu.classList.add("menu-popup-active")
     popMenu.appendChild(navList)
@@ -23,8 +25,17 @@ closemenu.addEventListener("click",()=> {
 const nextbtn = document.querySelector(".next")
 const prevbtn = document.querySelector(".prev") 
 const slides = document.querySelectorAll(".slide")
-let currentindex = 0
+let  slidesNav = document.querySelectorAll(".slide-nav")
+slidesNav = Array.from(slidesNav)
 
+
+function removeprevslide() {
+    slides.forEach((singlenav)=> {
+        singlenav.classList.remove("slide-active")
+    })
+
+}
+let currentindex = 0
 
 nextbtn.addEventListener("click",() => {
     slides[currentindex].classList.remove("slide-active")
@@ -40,4 +51,32 @@ prevbtn.addEventListener("click",() => {
 
 })
 
+slidesNav.forEach((singleNav)=> {
+    singleNav.addEventListener("click",() => {
+        let findidex = slidesNav.indexOf(singleNav)
+        removeprevslide()
+        slides[findidex].classList.add("slide-active")
+        
+
+    })
+
+})
+
+/* header items hover effect */
+const linkItem = document.querySelectorAll(".link-item")
+const linkHover = document.querySelectorAll(".link-hover")
+
+
+function removeprev() {
+    linkHover.forEach((hover)=> {
+        hover.classList.remove("link-hover-active")
+    })
+}
+linkItem.forEach((link)=> {
+    link.addEventListener("click",()=> {
+        sister = link.nextElementSibling
+        removeprev()
+        sister.classList.add("link-hover-active")
+    })
+})
 
