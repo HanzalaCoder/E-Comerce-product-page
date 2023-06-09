@@ -4,10 +4,6 @@ const closemenu = document.querySelector(".close")
 const popMenu = document.querySelector(".menu-popup")
 const navList = document.querySelector(".links")
 const nav = document.querySelector(".nav")
-
-
-
-
 openMenu.addEventListener("click",()=> {
     popMenu.classList.add("menu-popup-active")
     popMenu.appendChild(navList)
@@ -62,6 +58,22 @@ slidesNav.forEach((singleNav)=> {
 
 })
 
+/* model  */
+const overlay  = document.querySelector(".overlay")
+const model = document.querySelector(".model")
+const slideContainer = document.querySelector(".slide-container")
+
+
+
+slides.forEach((slide)=> {
+    slide.addEventListener("click", addmodel)
+
+})
+
+function addmodel() {
+    console.log("hi")
+
+}
 /* header items hover effect */
 const linkItem = document.querySelectorAll(".link-item")
 const linkHover = document.querySelectorAll(".link-hover")
@@ -160,3 +172,4 @@ function orderComplete() {
 
 
 }
+
