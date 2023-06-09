@@ -68,3 +68,27 @@ body {
     font-weight: 600;
 }
 
+.cart-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plus {
+    cursor: pointer;
+}
+.minus {
+    cursor: pointer;
+}
+
+.cart-img {
+    cursor: pointer;
+}
+
+.delelte {
+    cursor: pointer;
+}
+.cart-flex {
+    cursor: pointer;
+}
+    

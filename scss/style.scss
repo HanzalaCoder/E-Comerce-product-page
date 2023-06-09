@@ -68,25 +68,54 @@
             flex-direction: column;
             position: relative;
 
+            .cart-box {
+                position: relative;
+                .cart-img {
+                    width: 30px;
+                }
+
+                .item-taken {
+                    position: absolute;
+                    top: -.5rem;
+                    right: 0;
+                    font-size: .7rem;
+                    background-color: $Orange;
+                    border-radius: 50%;
+                    padding: .0em .5em;
+                    color: white;
+                    display: none;
+                    
+                }
+
+                .item-taken-active {
+                    display: inline-block;
+                }
+            }
+
+
+
             .cart-container {
                 display: flex;
                 gap: 1rem;
                 flex-direction: column;
                 position: absolute;
-                right: 0;
-                width: 350px;
+                right: -2rem;
+                top: 3rem;
+                width: 380px;
                 height: auto;
                 border-radius: 10px;
                 z-index: 4;
                 padding: 1rem;
                 background-color: $Light-grayish-blue;
+                box-shadow: 0 2px 2px rgb(96, 91, 91);
+                display: none;
 
+            
                 .cart-unfill {
                     display: grid;
                     place-content: center;
                     padding: 2em 0;
-                    display: none;
-            
+
                 }
 
                 .cart-fill {
@@ -94,6 +123,7 @@
                     gap: 1rem;
                     flex-direction: column;
                     justify-content: space-between;
+                    display: none;
                     .text-delete {
                         display: flex;
                         align-items: center;
@@ -105,6 +135,7 @@
                         }
 
                         .delete {
+                            margin-left: auto;
                             border-radius: 0;
                             width: 20px;
                         }
@@ -126,34 +157,30 @@
                         border-radius: 10px;
                         font-weight: 700;
                     }
+                    .checkout:hover,.checkout:focus-within,.checkout:active {
+                        opacity: 50%;
+                    }
 
-
-
-
-                     
-                        
-                    
+                   
                 }
+                .cart-fill-active {
+                    display: flex;
+                }
+                .cart-unfill-unactive {
+                    display: none;
 
-
-
+                }
             }
 
-
-
-
-
-
-
+            .cart-popup {
+                display: flex;
+            }
         }
-
-
     }
     .main {
 
         .slide-container {
             position: relative;
-
 
             .btn {
                 background-color: $White;

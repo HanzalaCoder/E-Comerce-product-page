@@ -33,7 +33,32 @@
     .header {
         height: 200px;
         border-bottom: 1px solid gray;
+        .cart {
+            margin-right: 3rem;
 
+            .cart-box {
+                .cart-img {
+                    width: 50px;
+    
+                }
+
+                .item-taken {
+                    font-size: 1rem;
+                    padding: 0 .6em;
+                }
+
+            }
+            
+
+
+            
+            .cart-container {
+                top: 6rem;
+                right: -8rem;
+
+               
+            }
+        }
         .link {
             display: flex;
             flex-direction: column;
@@ -73,9 +98,6 @@
 
             .slide-buttons {
                 display: none;
-            }
-            .btn {
-              
             }
             .nav-slide {
                 display: flex;

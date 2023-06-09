@@ -81,6 +81,82 @@ linkItem.forEach((link)=> {
 })
 
 
-/* add item to the list */
+/* All cart functionality is here adding or removeing and updading the cart container */
+const cartOpen = document.querySelector(".cart-img")
+const cartclose = document.querySelector(".cart-flex")
+const cartContainer = document.querySelector(".cart-container")
+const cartFill = document.querySelector(".cart-fill")
+const cartUnfill = document.querySelector(".cart-unfill")
+const total = document.querySelector(".total")
+const multiply = document.querySelector(".multiply")
+const deleteBuyin = document.querySelector(".delete")
+const notification = document.querySelector(".item-taken")
 
 
+
+const plusNum = document.querySelector(".plus")
+const minusNum = document.querySelector(".minus")
+const Num = document.querySelector(".number")
+const submit = document.querySelector(".submit")
+
+cartOpen.addEventListener("click",showCart)
+cartclose.addEventListener("click",hideCart)
+
+let totalItem = 0;
+plusNum.addEventListener("click",()=> {
+    totalItem += 1
+    AddItemPurchase(totalItem)
+})
+
+minusNum.addEventListener("click",()=> {
+    totalItem -= 1
+    AddItemPurchase(totalItem)
+
+})
+
+
+submit.addEventListener("click", orderComplete)
+deleteBuyin.addEventListener("click",() => {
+    notification.classList.remove("item-taken-active")
+    notification.textContent = 0
+    cartFill.classList.remove("cart-fill-active")
+    cartUnfill.classList.remove("cart-unfill-unactive")
+
+})
+
+function showCart() {
+    cartContainer.classList.add("cart-popup")
+}
+function hideCart() {
+    cartContainer.classList.remove("cart-popup")
+
+}
+function AddItemPurchase(value) {
+    if (value <= 0) {
+        value = 0
+    } 
+    Num.textContent = value
+}
+
+function orderComplete() {
+
+    if (totalItem <= 0) {
+        notification.classList.remove("item-taken-active")
+    } else if (totalItem >= 1) {
+        notification.classList.add("item-taken-active")
+        notification.textContent = totalItem
+    }
+    if (totalItem <= 0 ) {
+        cartFill.classList.remove("cart-fill-active")
+        cartUnfill.classList.remove("cart-unfill-unactive")
+    } 
+    if (totalItem >= 1) {
+        console.log("2")
+        cartUnfill.classList.add("cart-unfill-unactive")
+        cartFill.classList.add("cart-fill-active")
+        multiply.textContent = totalItem + " "
+        total.textContent = (totalItem * 125) + ".00"
+    }
+
+
+}
